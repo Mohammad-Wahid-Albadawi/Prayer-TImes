@@ -47,7 +47,7 @@ function App() {
   return (
     <section>
       <div className="my-container flex items-center text-white">
-        <div className="main-dev mr-10 md:mr-40 p-6 rounded w-3/4 md:w-1/2 border-2 border-solid border-slate-400">
+        <div className="main-dev mx-auto lg:mx-40 p-6 rounded w-[90%] md:w-3/4 lg:w-1/2 border-2 border-solid border-slate-400">
         {content}
         </div>
       </div>
