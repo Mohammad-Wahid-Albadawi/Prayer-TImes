@@ -48,7 +48,7 @@ function App() {
       content = <p className="text-center">Loading...</p>;
       if(!isLoading && !error) 
         content = <>
-        <p className="text-center">By Eng.Mohammad Wahid Albadawi</p>
+        {/* <p className="text-center">By Eng.Mohammad Wahid Albadawi</p> */}
           <TopSection date={date} isOnline={isOnline}/>
           <ButtomSection timings={timings}/>
         </>
