@@ -21,7 +21,10 @@ const TopSection = (props) => {
     return <div className="flex justify-between pb-6 border-b-2 border-solid border-neutral-400">
         <div>
             <p className="font-bold mb-2">المحافظة</p>
-            <select className="w-32 sm:w-48 lg:w-60 px-4 py-1 rounded bg-orange-800 focus:outline-none"value={ctx.city} onChange={changeCityHandler}>
+            <select className="w-32 sm:w-48 lg:w-60 px-4 py-1 rounded bg-orange-800 focus:outline-none"
+                disabled={!props.isOnline}
+                value={ctx.city} 
+                onChange={changeCityHandler}>
                 {cities.map((city) => (
                     <option key={city.value} value={city.value}>{city.name}</option>
                 ))}
